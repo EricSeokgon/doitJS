@@ -14,9 +14,11 @@
     <div id="result" class="show">(결과 값 표시)</div>
     <script>
         function calc() {
-            var currenYear;
-            var birthYear;
+            var currenYear = 2019;
+            var birthYear = 1990;
             var age;
+            age = currenYear - birthYear + 1;
+            document.querySelector("#result").innerHTML = "당신의 나이는" + age + "세입니다.";
         }
     </script>
 </body>
